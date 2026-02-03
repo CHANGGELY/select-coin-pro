@@ -1,0 +1,59 @@
+# ========================================
+# .gitignore - 排除不需要上传的文件
+# ========================================
+
+# === 大型数据目录 ===
+coin-cap/
+coin-binance-spot-swap-preprocess-pkl-1h-2026-02-02/
+select-coin-pro_v1.8.2/data/
+
+# === Python 缓存 ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === 虚拟环境 ===
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === IDE 配置 ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.trae/
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+
+# === 操作系统 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 日志文件 ===
+*.log
+logs/

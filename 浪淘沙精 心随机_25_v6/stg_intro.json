@@ -1,0 +1,518 @@
+[
+  {
+    "name": "大学生",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6777a0c900f852c074dc325e"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用市值因子选择小市值币种进行做多",
+      "使用案例": {
+        "strategy": "大学生",
+        "offset_list": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "mix_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 1,
+        "short_cap_weight": 0,
+        "long_select_coin_num": 0.3,
+        "short_select_coin_num": 0,
+        "factor_list": [
+            ["CirculatingMcap", true, 168, 1]
+        ],
+        "filter_list": [
+            ["ZfStd", 168, "pct:<0.8"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "GA",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/67fdfd80bb433fd52c538986"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用成交量变化幅度因子选择缩量币种做多",
+      "使用案例": {
+        "strategy": "GA",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "mix_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 1,
+        "short_cap_weight": 0,
+        "long_select_coin_num": 0.1,
+        "short_select_coin_num": 0,
+        "factor_list": [
+            ["RankDiff", true, 168, 1]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列1",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/67b83f09242c97dc8809b242"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/143?search_ids=143"],
+      "策略说明": "使用成交额均值因子和动量因子选择弱势大币做空",
+      "使用案例": {
+        "strategy": "黄果树系列1",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 0.5,
+        "factor_list": [
+            ["Cci", false, 168, 1]
+        ],
+        "filter_list": [
+            ["QuoteVolumeMean", 168, "pct:<0.2", false]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/67cfa73bad0a6d897de7c52c"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/143?search_ids=143"],
+      "策略说明": "使用成交额均值因子和动量因子选择弱势大币做空",
+      "使用案例": {
+        "strategy": "黄果树系列2",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 0.5,
+        "factor_list": [
+            ["QuoteVolumeMean", true, 168, 1]
+        ],
+        "filter_list": [
+            ["Cci", 168, "pct:<0.2"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/67cfa73bad0a6d897de7c52c"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/143?search_ids=143"],
+      "策略说明": "使用成交额均值因子和动量因子选择弱势大币做空",
+      "使用案例": {
+        "strategy": "黄果树系列3",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 9999,
+        "factor_list": [
+            ["QuoteVolumeMean", true, 168, 1]
+        ],
+        "filter_list": [
+            ["Cci", 168, "pct:<0.15"],
+            ["QuoteVolumeMean", 168, "pct:<0.15", false]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "落九天",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6867a052ef6227f13753a9d5"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/162?search_ids=162"],
+      "策略说明": "使用新币因子对刚上市的新币合约做空",
+      "使用案例": {
+        "strategy": "落九天",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 9999,
+        "factor_list": [
+            ["新币", true, 168, 1]
+        ],
+        "filter_list": [
+            ["新币", 168, "val:<168"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "大学生+浪2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6821c3e23d3b10c95a825412"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用浪2后置过滤因子对大学生多头选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "大学生+浪2",
+        "offset_list": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "mix_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 1,
+        "short_cap_weight": 0,
+        "long_select_coin_num": 0.3,
+        "short_select_coin_num": 0,
+        "factor_list": [
+            ["CirculatingMcap", true, 168, 1]
+        ],
+        "filter_list": [
+            ["ZfStd", 168, "pct:<0.8"]
+        ],
+        "filter_list_post": [
+            ["ZfMeanQ", 168, "val:>0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "大学生+浪3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/68592e463daff202fb4249f7"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/158?search_ids=158"],
+      "策略说明": "使用浪3后置过滤因子对大学生多头选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "大学生+浪3",
+        "offset_list": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "mix_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 1,
+        "short_cap_weight": 0,
+        "long_select_coin_num": 0.3,
+        "short_select_coin_num": 0,
+        "factor_list": [
+            ["CirculatingMcap", true, 168, 1]
+        ],
+        "filter_list": [
+            ["ZfStd", 168, "pct:<0.8"]
+        ],
+        "filter_list_post": [
+            ["VolumeMeanQ", 168, "val:>0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "GA+浪2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6821c3e23d3b10c95a825412"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用浪2后置过滤因子对GA多头选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "GA+浪2",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "mix_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 1,
+        "short_cap_weight": 0,
+        "long_select_coin_num": 0.1,
+        "short_select_coin_num": 0,
+        "factor_list": [
+            ["RankDiff", true, 168, 1]
+        ],
+        "filter_list_post": [
+            ["ZfMeanQ", 168, "val:>0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "GA+浪3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/68592e463daff202fb4249f7"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/158?search_ids=158"],
+      "策略说明": "使用浪3后置过滤因子对GA多头选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "GA+浪3",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "mix_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 1,
+        "short_cap_weight": 0,
+        "long_select_coin_num": 0.1,
+        "short_select_coin_num": 0,
+        "factor_list": [
+            ["RankDiff", true, 168, 1]
+        ],
+        "filter_list_post": [
+            ["VolumeMeanQ", 168, "val:>0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列1+浪2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6821c3e23d3b10c95a825412"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用浪2后置过滤因子对黄果树空头系列1选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "黄果树系列1+浪2",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 0.5,
+        "factor_list": [
+            ["Cci", false, 168, 1]
+        ],
+        "filter_list": [
+            ["QuoteVolumeMean", 168, "pct:<0.2", false]
+        ],
+        "filter_list_post": [
+            ["ZfMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列1+浪3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/68592e463daff202fb4249f7"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/158?search_ids=158"],
+      "策略说明": "使用浪3后置过滤因子对黄果树空头系列1选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "黄果树系列1+浪3",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 0.5,
+        "factor_list": [
+            ["Cci", false, 168, 1]
+        ],
+        "filter_list": [
+            ["QuoteVolumeMean", 168, "pct:<0.2", false]
+        ],
+        "filter_list_post": [
+            ["VolumeMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列2+浪2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6821c3e23d3b10c95a825412"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用浪2后置过滤因子对黄果树空头系列2选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "黄果树系列2+浪2",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 0.5,
+        "factor_list": [
+            ["QuoteVolumeMean", true, 168, 1]
+        ],
+        "filter_list": [
+            ["Cci", 168, "pct:<0.2"]
+        ],
+        "filter_list_post": [
+            ["ZfMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列2+浪3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/68592e463daff202fb4249f7"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/158?search_ids=158"],
+      "策略说明": "使用浪3后置过滤因子对黄果树空头系列2选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "黄果树系列2+浪3",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 0.5,
+        "factor_list": [
+            ["QuoteVolumeMean", true, 168, 1]
+        ],
+        "filter_list": [
+            ["Cci", 168, "pct:<0.2"]
+        ],
+        "filter_list_post": [
+            ["VolumeMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列3+浪2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6821c3e23d3b10c95a825412"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/139?search_ids=139"],
+      "策略说明": "使用浪2后置过滤因子对黄果树空头系列3选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "黄果树系列3+浪2",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 9999,
+        "factor_list": [
+            ["QuoteVolumeMean", true, 168, 1]
+        ],
+        "filter_list": [
+            ["Cci", 168, "pct:<0.15"],
+            ["QuoteVolumeMean", 168, "pct:<0.15", false]
+        ],
+        "filter_list_post": [
+            ["ZfMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "黄果树系列3+浪3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/68592e463daff202fb4249f7"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/158?search_ids=158"],
+      "策略说明": "使用浪3后置过滤因子对黄果树空头系列2选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "黄果树系列3+浪3",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 9999,
+        "factor_list": [
+            ["QuoteVolumeMean", true, 168, 1]
+        ],
+        "filter_list": [
+            ["Cci", 168, "pct:<0.15"],
+            ["QuoteVolumeMean", 168, "pct:<0.15", false]
+        ],
+        "filter_list_post": [
+            ["VolumeMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "落九天+浪2",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6867a052ef6227f13753a9d5"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/162?search_ids=162"],
+      "策略说明": "使用浪2后置过滤因子对落九天选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "落九天+浪2",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 9999,
+        "factor_list": [
+            ["新币", true, 168, 1]
+        ],
+        "filter_list": [
+            ["新币", 168, "val:<168"]
+        ],
+        "filter_list_post": [
+            ["ZfMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  },
+  {
+    "name": "落九天+浪3",
+    "info": {
+      "策略直播": ["https://www.quantclass.cn/online-player/6867a052ef6227f13753a9d5"],
+      "论坛帖子":[],
+      "相关船队":["https://bbs.quantclass.cn/category/162?search_ids=162"],
+      "策略说明": "使用浪3后置过滤因子对落九天选币策略进行后置过滤",
+      "使用案例": {
+        "strategy": "落九天+浪3",
+        "offset_list": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+        "hold_period": "24H",
+        "market": "swap_swap",
+        "cap_weight": 1,
+        "long_cap_weight": 0,
+        "short_cap_weight": 1,
+        "long_select_coin_num": 0,
+        "short_select_coin_num": 9999,
+        "factor_list": [
+            ["新币", true, 168, 1]
+        ],
+        "filter_list": [
+            ["新币", 168, "val:<168"]
+        ],
+        "filter_list_post": [
+            ["VolumeMeanQ", 168, "val:<0.5"]
+        ],
+        "use_custom_func": false
+      }
+    }
+  }
+]
